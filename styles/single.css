@@ -1,0 +1,54 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 40px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 100%;
+    max-height: auto;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    border-radius: 30px;
+}
+
+blockquote {
+    border-left: 5px solid #ccc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+blockquote footer {
+    font-weight: bold;
+    font-size: 16px;
+}

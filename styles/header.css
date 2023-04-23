@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+nav {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 16px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #0077cc;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #0077cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: #005ea6;
+}
+
+.register-button {
+    background-color: transparent;
+    border: 2px solid #0077cc;
+    color: #0077cc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.register-button:hover {
+    background-color: #0077cc;
+    color: #ffffff;
+}
+
+.profile-avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.profile-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+
+    .logo {
+        margin-right: auto;
+        margin-left: 16px;
+    }
+
+    .nav-links {
+        margin-top: 16px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .auth-buttons {
+        margin-left: auto;
+        margin-right: 16px;
+    }
+}
